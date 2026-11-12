@@ -22,7 +22,7 @@ RUN pip install --upgrade pip \
     && pip install -r requirements.txt
 
 # Kelpie worker (version pinned; matches the official Salad Kelpie guide)
-ARG KELPIE_VERSION=0.6.0
+ARG KELPIE_VERSION=0.7.2
 ADD https://github.com/SaladTechnologies/kelpie/releases/download/${KELPIE_VERSION}/kelpie /kelpie
 RUN chmod +x /kelpie
 
